@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кружок со звуком</title>
+    <style>
+        /* Стили для кружка */
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-image: url('().[].jpg');
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+            margin: 50px auto;
+            border: 5px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <!-- Кружок с фоткой -->
+    <div class="circle" onclick="playSound()"></div>
+
+    <!-- Аудио -->
+    <audio id="sound" src="del_principito_-_Turnaround_Reprise_cancin_77923520.mp3"></audio> 
+
+    <script>
+        // Функция для воспроизведения звука
+        function playSound() {
+            const audio = document.getElementById('sound');
+            audio.play();
+        }
+    </script>
+</body>
+</html>
